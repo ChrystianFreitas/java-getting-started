@@ -34,6 +34,7 @@ import java.util.Map;
 public class Main {
 
   private Fibonacci f = new Fibonacci();
+  private somar6mais6 s = new somar6mais6();
 
   public static void main(String[] args) throws Exception {
     SpringApplication.run(Main.class, args);
@@ -52,6 +53,13 @@ public class Main {
      }
      model.put("sequencia", sequencia);
     return "fibo";
+  }
+  
+  @RequestMapping("/soma")
+  String somar(Map<String, Object> model) {
+     
+    model.put('Resultado', s.somar6mais6());
+    return "soma";
   }
 
 }
