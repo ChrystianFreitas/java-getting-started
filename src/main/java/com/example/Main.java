@@ -58,7 +58,7 @@ public class Main {
   
     @RequestMapping("/somar")
   String somar(Map<String, Object> model) {
-     ArrayList<int> resultado = new ArrayList<int>();
+     ArrayList<Long> resultado = new ArrayList<Long>();
        resultado.add(s.somar());
      model.put("resultado", resultado);
     return "somar";
