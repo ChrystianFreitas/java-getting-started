@@ -7,4 +7,5 @@ public class somar6mais6{
     }
     public static int somar() {
        return 6+6;
+  }
 }
