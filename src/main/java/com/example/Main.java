@@ -57,8 +57,8 @@ public class Main {
   
   @RequestMapping("/soma")
   String somar(Map<String, Object> model) {
-     
-    model.put("resultado", s.somar());
+     int resultado = somar();
+    model.put("resultado", resultado);
     return "soma";
   }
 
