@@ -5,8 +5,10 @@
 
 
 <div class="container">
-  <h1>Somando 6 mais 6</h1>
-  <label value="${resultado}"></label>
+  <h1>A soma de 6 mais 6 é?</h1>
+  <ul th:each="num : ${resultado}">
+    <li th:text="${num}"/>
+  </ul>
 </div>
 
 </body>

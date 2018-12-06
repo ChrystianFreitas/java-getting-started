@@ -55,11 +55,18 @@ public class Main {
     return "fibo";
   }
   
-  @RequestMapping("/soma")
+  
+    @RequestMapping("/somar")
   String somar(Map<String, Object> model) {
-     int resultado = s.somar();
-    model.put("resultado", resultado);
-    return "soma";
+     ArrayList<Long> resultado = new ArrayList<Long>();
+     for (int i = 0; i < 30; i++) {
+       resultado.add(s.somar());
+     }
+     model.put("resultado", resultado);
+    return "somar";
   }
+  
+  
+  
 
 }
